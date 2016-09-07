@@ -6,7 +6,7 @@
 				<!-- album.id in the command url 'detail' album.id is something that we want to add
 					 to <albumIDs> as <albumIDs> is a variable
 				--> 
-				<a href="{% url 'detail' album.id %}">Title: {{album.album_title}}</a>
+				<a href="{% url 'music:detail' album.id %}">{{album.album_title}}</a>
 			</li>
 		{% endfor %}
 	</ul>
